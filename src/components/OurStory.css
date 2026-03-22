@@ -1,0 +1,93 @@
+.story-section {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-image: url("/hero21.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.story-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+
+.story-content {
+  position: relative;
+  color: #fff;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+
+.story-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.story-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.story-btn {
+  padding: 10px 28px;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.story-btn:hover {
+  background: #fff;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    height: 420px;
+    
+   
+    background-attachment: scroll; 
+
+   
+    background-size: cover;
+    background-position: center;
+  }
+
+  .story-title {
+    font-size: 1.7rem;
+  }
+
+  .story-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-section {
+    height: 350px;
+  }
+
+  .story-title {
+    font-size: 1.45rem;
+  }
+
+  .story-text {
+    font-size: 0.95rem;
+  }
+}

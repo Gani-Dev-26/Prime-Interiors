@@ -1,0 +1,35 @@
+.gallery-strip-section {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+
+}
+
+.gallery-strip-container {
+  display: flex;
+  width: 100%;
+}
+
+.gallery-item {
+  flex: 1;
+  min-width: 300px;
+  height: 260px;
+  overflow: hidden;           /* IMPORTANT */
+  position: relative;
+}
+
+/* Make image slightly bigger initially */
+.gallery-img {
+  width: 110%;                /* makes image larger so movement doesn’t show white space */
+  height: 110%;               /* keeps full coverage */
+  object-fit: cover;
+  transition: transform 0.45s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* HOVER: move slightly down + zoom a bit */
+.gallery-item:hover .gallery-img {
+  transform: translatey(10px) scale(1.15);
+}

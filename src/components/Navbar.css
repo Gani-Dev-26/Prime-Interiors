@@ -1,0 +1,144 @@
+
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: transparent !important;
+  transition: 0.35s ease;
+}
+
+.main-header.scrolled {
+  background: rgba(28, 30, 35, 0.92) !important;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(240, 68, 240, 0.22);
+}
+
+
+.top-strip {
+  background: transparent !important;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 2px 0;
+  transition: 0.3s ease;
+}
+
+.top-strip.hide {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.navbar {
+  background: transparent !important;
+  padding: 5px 0 !important;
+  transition: 0.3s ease;
+}
+
+.main-header.scrolled .navbar {
+  padding: 3px 0;
+}
+
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.89rem;
+  transition: 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-item .dropdown-toggle:hover {
+  color: #ffcf40 !important;
+}
+
+/* ===========================
+   DROPDOWN MENU
+=========================== */
+.dropdown-menu {
+  background: rgba(28, 30, 35, 0.95);
+  border: none;
+  padding: 10px 0;
+  min-width: 250px;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+  background: transparent;
+  color: #ffcf40;
+}
+
+.dropdown-item i {
+  font-size: 18px;
+  color: #ffcf40;
+}
+
+/* Desktop hover dropdown */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* ===========================
+   ICONS & CART
+=========================== */
+.bi {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.text-warning {
+  color: #ffcf40 !important;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: red;
+  color: white;
+  padding: 2px 6px;
+  font-size: 11px;
+  border-radius: 50%;
+}
+
+/* ===========================
+   MOBILE NAV
+=========================== */
+.custom-toggler {
+  border: none;
+  outline: none;
+}
+
+.custom-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.85) !important;
+    padding: 15px 20px;
+  }
+}

@@ -1,0 +1,66 @@
+
+
+.footer-wrapper {
+  background-color: #000000;
+  color: #e6e6e6;          
+  padding: 40px 0 40px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2px !important;
+}
+
+/* Yellow headings */
+.footer-title {
+  color: #f5b300;           
+  font-weight: 700;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Normal footer links/text */
+.footer-text {
+  color: #d6d6d6;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* TOP SECTION SHOWROOM HEADING */
+.footer-showroom-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5b300;
+}
+
+/* Buttons */
+.footer-btn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 7px 14px;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: #f5b300;
+  color: #000;
+  border-color: #f5b300;
+}
+
+/* Phone number yellow */
+.footer-phone {
+  color: #f5b300;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Divider line */
+.footer-divider {
+  border-color: #444;
+}
+
+/* Hover effect (optional) */
+.footer-text:hover {
+  color: #ffffff;
+  cursor: pointer;
+}

@@ -1,0 +1,205 @@
+
+.ideas-section {
+  background: #efe1f0;
+  padding: 100px;
+}
+
+.ideas-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ideas-subtitle {
+  color: #777;
+}
+
+
+.idea-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;                   
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+/* Hover movement */
+.idea-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image uniformity */
+.idea-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+
+.idea-overlay {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  color: white;
+}
+
+.idea-date {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.idea-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  max-width: 250px;
+  line-height: 1.3;
+}
+
+
+
+/* Tablets */
+@media (max-width: 992px) {
+  .idea-img {
+    height: 320px;
+  }
+}
+
+/* Mobile (2 per row) */
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 50% !important;
+  }
+
+  .idea-img {
+    height: 260px;
+  }
+
+  .idea-heading {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small mobile (1 per row) */
+@media (max-width: 576px) {
+  .col-md-6 {
+    width: 100% !important;
+  }
+
+  .idea-img {
+    height: 220px;
+  }
+
+  .idea-overlay {
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .idea-heading {
+    font-size: 1.15rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 420px) {
+  .idea-img {
+    height: 200px;
+  }
+
+  .idea-heading {
+    font-size: 1rem;
+  }
+}
+/* Base Styling */
+.idea-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.idea-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.idea-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(0,0,0,0.7), transparent);
+}
+
+.idea-date {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.idea-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+
+
+/* ---------------------------- */
+/* ⭐ MOBILE VIEW FIXES ⭐ */
+/* ---------------------------- */
+@media (max-width: 576px) {
+
+  .ideas-section {
+    padding: 20px 0;
+  }
+
+  .row.g-5 {
+    --bs-gutter-x: 1rem !important;
+    --bs-gutter-y: 1.5rem !important;
+  }
+
+  .idea-img {
+    height: 270px;          /* smaller height for mobile */
+  }
+
+  /* Smaller text inside overlay */
+  .idea-overlay {
+    padding: 15px;
+  }
+
+  .idea-date {
+    font-size: 12px;        /* smaller */
+  }
+
+  .idea-heading {
+    font-size: 15px;        /* smaller title */
+    line-height: 1.3;
+  }
+
+  /* Optional: Make card look premium on mobile */
+  .idea-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .ideas-title {
+    font-size: 1.5rem;     /* smaller heading */
+  }
+
+  .ideas-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .btn-warning {
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+  }
+}
