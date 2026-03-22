@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-lg-8">
             <h2 className="footer-showroom-heading">VISIT OUR SHOWROOM</h2>
 
-            <p className="footer-text">200 12th cross, hyderbad, India</p>
+            <p className="footer-text">200 12th cross, karnataka, India</p>
             <p className="footer-text">
               Mon – Sat: 10 am - 6 pm &nbsp; | &nbsp; Sun: 12 pm - 2 pm
             </p>
@@ -24,7 +24,7 @@ const Footer = () => {
 
             <span className="footer-phone">
               <i className="bi bi-telephone me-2"></i>
-              333.278.06622
+              6363292527
             </span>
           </div>
 
@@ -60,7 +60,7 @@ const Footer = () => {
 
           <div className="col-md-3 col-6 mb-4">
             <h5 className="footer-title">MAINTAINED BY</h5>
-            <p className="footer-text">Zorvixe Technology</p>
+            <p className="footer-text">Zentro.core</p>
           </div>
 
         </div>
